@@ -1,7 +1,7 @@
 import { useState } from 'react';
 import './App.css';
 
-function App() {
+function App() { 
   const [display,setDisplay] = useState('0')
   const buttons = document.querySelectorAll("button")
   
@@ -25,7 +25,11 @@ function App() {
   }
 
   const handleEqual = (event) =>{
-     setDisplay(eval(display));
+    try {
+      setDisplay(eval(display));
+    } catch (error) {
+      setDisplay('Error');
+    } 
   }
 
   const handleDecimal = (event) =>{
@@ -36,7 +40,8 @@ function App() {
       setDisplay(display+ ".");
     }
   }
-
+ 
+  
   buttons.forEach((button) => {
     button.addEventListener("mousedown", () => { 
       button.classList.add("button-push");
@@ -50,6 +55,8 @@ function App() {
       button.classList.remove("button-push");
     });
   });
+
+  
 
   return (
     <div className="App">

@@ -1,5 +1,5 @@
 body{
-  background-color: rgb(61, 61, 61);
+  background-color: rgb(207, 207, 202);
 }
 .App {  
   display: flex;
@@ -8,49 +8,53 @@ body{
 
 .calculator{
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr  ;
-  margin-top: 15%;
+  grid-template-columns: 1fr 1fr 1fr 1fr  ; 
+  margin-top: 20%;
   height: 550px; 
-  width: 300px; 
+  width: 380px; 
   background-color: black;
-  border-radius: 10px;
+  border-radius: 10px; 
+  padding: 5px;
 }
 
 .calculator >*{
   border: 5px solid black;
-  padding: 10px; 
+  padding: 10px;  
   border-radius: 10px;
   color: whitesmoke;
+}
+
+button{
+  background-color: rgb(61, 61, 61);
+  align-items: center;
+  font-size: 30px;
+  border-radius: 10px; 
 }
 
 button#clear,#zero{
   display: grid;
   grid-column: span 2;
 }
+button#divide,#multiply,#subtract,#add{
+  background-color: grey;
+}
+
+.button-push {
+  transform: translateY(2px);  
+  transition: transform 0.1s;  
+}  
 
 .row{
   grid-column: 1/-1;
 }
 
 #display{
-  text-align: right;
+  text-align: right; 
   color: whitesmoke;
   font-size: large;
   font-family: 'Orbitron', sans-serif;
-  background-color: rgb(27, 27, 25);
+  background-color: rgb(27, 27, 25); 
 }
-
-button{
-  background-color: grey;
-  align-items: center;
-  font-size: 30px;
-  border-radius: 10px; 
-}
-
-.button-push {
-  transform: translateY(2px);  
-  transition: transform 0.1s;  
-} 
 
 #clear{
   background-color: rgb(247, 37, 37);  
