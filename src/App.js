@@ -20,10 +20,16 @@ function App() {
 
   const handleOperators = (event) =>{
     const operators= event.target.textContent;
+    const lastChar= display.toString().trim().slice(-1);
 
-    setDisplay(display + ' ' + operators + ' ');
+    if((operators === '+' || operators === '*' || operators === '/') &&
+    (lastChar === '+' || lastChar === '-' || lastChar === '*' || lastChar === '/')){
+      setDisplay(display.toString().replace(/[-+*/]\s*$/, operators + ' '));
+    }else{
+      setDisplay(display + ' ' + operators + ' ');
+    }
   }
-
+ 
   const handleEqual = (event) =>{
     try {
       setDisplay(eval(display));
@@ -56,6 +62,7 @@ function App() {
     });
   });
 
+  
   
 
   return (

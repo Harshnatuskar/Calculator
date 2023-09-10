@@ -21,7 +21,7 @@ body{
   border: 5px solid black;
   padding: 10px;  
   border-radius: 10px;
-  color: whitesmoke;
+  color: whitesmoke; 
 }
 
 button{
@@ -51,7 +51,7 @@ button#divide,#multiply,#subtract,#add{
 #display{
   text-align: right; 
   color: whitesmoke;
-  font-size: large;
+  font-size: xx-large;
   font-family: 'Orbitron', sans-serif;
   background-color: rgb(27, 27, 25); 
 }
