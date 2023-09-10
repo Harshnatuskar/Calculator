@@ -2,7 +2,7 @@
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-Live site:https://harshnatuskar.io/Calculator
+Live site: https://harshnatuskar.github.io/Calculator/
 
 ## Available Scripts
 
