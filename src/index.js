@@ -1,3 +1,9 @@
+import ReactDOM from "react-dom";
+import App from "./App";
+ReactDOM.render(<App />,  document.getElementById("root"));
+
+//the updated syntax wasnt working
+/*
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
@@ -9,4 +15,5 @@ root.render(
     <App />
   </React.StrictMode>
 );
+*/
  
